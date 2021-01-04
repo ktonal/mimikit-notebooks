@@ -1,2 +1,2 @@
-# mmk-notebooks
-Notebooks for mmk
+# mimikit-notebooks
+Notebooks for [mimikit](https://github.com/k-tonal/mimikit)
