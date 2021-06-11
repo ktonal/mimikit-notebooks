@@ -11,11 +11,11 @@ export TAG="v$(pip list | grep mimikit |  awk '{print $2}')"
 
 if [ "$(git tag -l $TAG)" ]; then
     git tag -d $TAG
-else
-    git tag -a $TAG -m $TAG
-fi
 
+fi
 git commit -am $TAG
+
+git tag -a $TAG -m $TAG
 
 #git push
 
