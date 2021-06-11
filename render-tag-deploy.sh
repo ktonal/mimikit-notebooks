@@ -9,9 +9,13 @@ python make_notebooks.py
 # grab mmk version
 export TAG="v$(pip list | grep mimikit |  awk '{print $2}')"
 
-git commit -am $TAG
+if [ "$(git tag -l $TAG)" ]; then
+    git tag -d $TAG
+else
+    git tag -a $TAG -m $TAG
+fi
 
-git tag -a $TAG -m $TAG
+git commit -am $TAG
 
 #git push
 
