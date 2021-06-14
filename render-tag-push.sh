@@ -2,7 +2,7 @@
 
 pip install nbformat mimikit
 
-git checkout test
+git checkout main
 
 python make_notebooks.py
 
