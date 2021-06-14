@@ -14,7 +14,11 @@ if [ "$(git tag -l $TAG)" ]; then
     git tag -d $TAG
 fi
 
-git commit -am $TAG
+# add, commit, tag, push
+
+git add .
+
+git commit -m $TAG
 
 git tag -a $TAG -m $TAG
 
