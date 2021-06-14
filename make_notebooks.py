@@ -62,8 +62,8 @@ if __name__ == '__main__':
     # from mimikit.models.seq2seqlstm import demo as s2s_demo
 
     roots = [
-        './plain-demos',
-        './colab-demos',
+        './demos/plain',
+        './demos/colab',
     ]
 
     demos = {
