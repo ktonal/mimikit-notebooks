@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install nbformat mimikit
+#pip install nbformat mimikit
 
 git checkout main
 
