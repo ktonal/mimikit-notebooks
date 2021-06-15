@@ -57,9 +57,9 @@ pip install mimikit=={mmk.__version__}
 if __name__ == '__main__':
     import os
     from mimikit.models.freqnet import demo as fnet_demo
-    # from mimikit.models.sample_rnn import demo as srnn_demo
+    from mimikit.models.sample_rnn import demo as srnn_demo
     # from mimikit.models.wavenet import demo as wn_demo
-    # from mimikit.models.seq2seqlstm import demo as s2s_demo
+    from mimikit.models.s2s_lstm import demo as s2s_demo
 
     roots = [
         './demos/plain',
@@ -68,6 +68,8 @@ if __name__ == '__main__':
 
     demos = {
         "freqnet.ipynb": fnet_demo,
+        "sample-rnn.ipynb": srnn_demo,
+        "seq2seq-lstm.ipynb": s2s_demo,
     }
 
     for root in roots:
