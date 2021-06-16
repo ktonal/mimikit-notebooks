@@ -1,2 +1,0 @@
-Hardware and software setup
-===========================

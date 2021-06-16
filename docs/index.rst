@@ -21,6 +21,10 @@ The mimikit-notebooks are a small collections of jupyter notebooks containing sc
      - **Plain**
      - **Colab**
      - **Sample**
+   * - Wavenet
+     - |Github Wavenet|
+     - |Colab Wavenet|
+     - |Sample Wavenet|
    * - SampleRNN
      - |Github SampleRNN|
      - |Colab SampleRNN|
@@ -38,7 +42,7 @@ The mimikit-notebooks are a small collections of jupyter notebooks containing sc
 Since all notebooks follow the same design, this documentation covers the general usage of the notebooks.
 It is intended for people who have little prior knowledge of python & deep-learning and wants to get a hands-on first contact.
 
-The first 2 sections of the User Guides cover the basic pre-requisites to run the scripts. The "How to ..." show you how
+The first section of the User Guide cover the basic pre-requisites to run the scripts. The "How to ..." sections show you how
 those scripts work and what you can do with them.
 
 If you have questions or troubles running the scripts, drop by our slack channel |Slack Badge|
@@ -47,8 +51,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
    :maxdepth: 1
    :caption: User Guides
 
-   Hardware and software setup
-   Basic python and how to use a notebook
+   Pre-requisites
    How to run a demo
    How to train on data you provide
    How to save outputs and models
@@ -63,6 +66,19 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Slack Badge| image:: https://img.shields.io/badge/slack-mimikit-blue.svg?logo=slack
    :target: https://mimikit.slack.com/messages
 
+.. |Colab Wavenet| image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/ktonal/mimikit-notebooks/blob/main/demos/colab/wavenet.ipynb
+
+.. |GitHub Wavenet| image:: https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=View%20On%20Github&color=blue
+   :target: https://github.com/ktonal/mimikit-notebooks/blob/main/demos/plain/wavenet.ipynb
+
+.. |Sample Wavenet| raw:: html
+
+   <audio controls="controls" style="height:24px;width:128px">
+      <source src="https://github.com/ktonal/mimikit-notebooks/assets/wn.mp3" >
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
 .. |Colab SampleRNN| image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/ktonal/mimikit-notebooks/blob/main/demos/colab/sample-rnn.ipynb
 
@@ -72,7 +88,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample SampleRNN| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://ktonal.github.io/voix-neuronales-axx/files/experiment-Stimme/EXS-62/prompt-6%20-%20epoch=70%20-%20temp=1.44.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/assets/srnn.mp3" >
       Your browser does not support the <code>audio</code> element.
     </audio>
 
@@ -85,7 +101,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample FreqNet| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://ktonal.github.io/voix-neuronales-axx/files/experiment-Stimme/EXS-62/prompt-6%20-%20epoch=70%20-%20temp=1.44.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/assets/freqnet.mp3" >
       Your browser does not support the <code>audio</code> element.
     </audio>
 
@@ -98,6 +114,6 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample S2S| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://ktonal.github.io/voix-neuronales-axx/files/experiment-Stimme/EXS-62/prompt-6%20-%20epoch=70%20-%20temp=1.44.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/assets/s2s.mp3" >
       Your browser does not support the <code>audio</code> element.
     </audio>
