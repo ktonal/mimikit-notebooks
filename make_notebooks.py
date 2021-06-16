@@ -8,18 +8,23 @@ import mimikit as mmk
 
 def colab_setup():
     title = nbf.v4.new_markdown_cell("""\
-## Connect to your GDrive\
+## Connect to your GDrive 
+In order to train the network on your data, create a directory named `data/`
+in the current working directory (cwd) of this notebook (when on colab and connected to gdrive
+this would be the `MyDrive/` directory in your gdrive account) and put audio files in it. \
 """)
     mount_drive = nbf.v4.new_code_cell("""\
 from google.colab import drive
 drive.mount('/gdrive')
-%cd /gdrive/MyDrive
+# this set the cwd of the notebook
+%cd /gdrive/MyDrive \
 """)
     install = nbf.v4.new_markdown_cell("""\
 ### Install `mimikit`\
 """)
-    pip = nbf.v4.new_code_cell(f"""
-!pip install mimikit=={mmk.__version__}""")
+    pip = nbf.v4.new_code_cell(f"""\
+!pip install mimikit=={mmk.__version__}\
+""")
     return [title, mount_drive, install, pip]
 
 
@@ -58,7 +63,7 @@ if __name__ == '__main__':
     import os
     from mimikit.models.freqnet import demo as fnet_demo
     from mimikit.models.sample_rnn import demo as srnn_demo
-    # from mimikit.models.wavenet import demo as wn_demo
+    from mimikit.models.wavenet import demo as wn_demo
     from mimikit.models.s2s_lstm import demo as s2s_demo
 
     roots = [
@@ -70,6 +75,7 @@ if __name__ == '__main__':
         "freqnet.ipynb": fnet_demo,
         "sample-rnn.ipynb": srnn_demo,
         "seq2seq-lstm.ipynb": s2s_demo,
+        "wavenet.ipynb": wn_demo,
     }
 
     for root in roots:
