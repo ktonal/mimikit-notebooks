@@ -75,7 +75,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample Wavenet| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/assets/wn.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/wn.mp3?raw=true" >
       Your browser does not support the <code>audio</code> element.
     </audio>
 
@@ -88,7 +88,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample SampleRNN| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/assets/srnn.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/srnn.mp3?raw=true" >
       Your browser does not support the <code>audio</code> element.
     </audio>
 
@@ -101,7 +101,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample FreqNet| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/assets/freqnet.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/freqnet.mp3?raw=true" >
       Your browser does not support the <code>audio</code> element.
     </audio>
 
@@ -114,6 +114,6 @@ If you have questions or troubles running the scripts, drop by our slack channel
 .. |Sample S2S| raw:: html
 
    <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/assets/s2s.mp3" >
+      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/s2s.mp3?raw=true" >
       Your browser does not support the <code>audio</code> element.
     </audio>
