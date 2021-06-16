@@ -42,14 +42,15 @@ The mimikit-notebooks are a small collections of jupyter notebooks containing sc
 Since all notebooks follow the same design, this documentation covers the general usage of the notebooks.
 It is intended for people who have little prior knowledge of python & deep-learning and wants to get a hands-on first contact.
 
-The first section of the User Guide cover the basic pre-requisites to run the scripts. The "How to ..." sections show you how
-those scripts work and what you can do with them.
+The fastest track, is to open one of the "Open in Colab" above, and evaluate the cells with `shift+enter`. The program will
+require you to connect to your Gdrive. Before doing so, make sure you placed some audio files in ``<username>/MyDrive/data`` on your Gdrive.
+Keep running the cells with `shift+enter`. Generated audio will be displayed during training.
 
-If you have questions or troubles running the scripts, drop by our slack channel |Slack Badge|
+If you have questions or troubles running the scripts, join our slack channel |Slack Badge|
 
 .. toctree::
    :maxdepth: 1
-   :caption: User Guides
+   :caption: User Guide
 
    Pre-requisites
    How to run a demo
@@ -64,7 +65,7 @@ If you have questions or troubles running the scripts, drop by our slack channel
    :target: https://github.com/ktonal/mimikit-notebooks/
 
 .. |Slack Badge| image:: https://img.shields.io/badge/slack-mimikit-blue.svg?logo=slack
-   :target: https://mimikit.slack.com/messages
+   :target: https://join.slack.com/t/mimikit/shared_invite/zt-rsu1cuzm-a8Zi~dDOtIr5nE6uaAlJUA
 
 .. |Colab Wavenet| image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/ktonal/mimikit-notebooks/blob/main/demos/colab/wavenet.ipynb
