@@ -20,23 +20,23 @@ The mimikit-notebooks are a small collections of jupyter notebooks containing sc
    * - **Model**
      - **Plain**
      - **Colab**
-     - **Sample**
    * - Wavenet
      - |Github Wavenet|
      - |Colab Wavenet|
-     - |Sample Wavenet|
    * - SampleRNN
      - |Github SampleRNN|
      - |Colab SampleRNN|
-     - |Sample SampleRNN|
    * - FreqNet
      - |Github FreqNet|
      - |Colab FreqNet|
-     - |Sample FreqNet|
    * - Seq2SeqLSTM
      - |Github S2S|
      - |Colab S2S|
-     - |Sample S2S|
+
+
+You'll find examples of what those notebooks output when trained on different single audio files at
+
+   https://ktonal.github.io/mimikit-demo-outputs
 
 
 Since all notebooks follow the same design, this documentation covers the general usage of the notebooks.
