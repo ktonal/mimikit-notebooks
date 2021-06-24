@@ -34,7 +34,7 @@ The mimikit-notebooks are a small collections of jupyter notebooks containing sc
      - |Colab S2S|
 
 
-You'll find examples of what those notebooks output when trained on different single audio files at
+You'll find examples of what those notebooks output when run on different single audio files at
 
    https://ktonal.github.io/mimikit-demo-outputs
 
@@ -42,9 +42,17 @@ You'll find examples of what those notebooks output when trained on different si
 Since all notebooks follow the same design, this documentation covers the general usage of the notebooks.
 It is intended for people who have little prior knowledge of python & deep-learning and wants to get a hands-on first contact.
 
-The fastest track, is to open one of the "Open in Colab" above, and evaluate the cells with `shift+enter`. The program will
-require you to connect to your Gdrive. Before doing so, make sure you placed some audio files in ``<username>/MyDrive/data`` on your Gdrive.
-Keep running the cells with `shift+enter`. Generated audio will be displayed during training.
+The fastest track, is to
+
+- open one of the "Open in Colab" above
+
+- evaluate the cells with `shift+enter`.
+
+- The program will require you to connect to your Gdrive. Before doing so, make sure you placed some audio files in ``<username>/MyDrive/data`` on your Gdrive.
+
+- Keep running the cells with `shift+enter` (Do not pay attention to the warnings and errors you get from the ``!pip install...`` cell, those are not critic).
+
+- Generated audio will be displayed during training.
 
 If you have questions or troubles running the scripts, join our slack channel |Slack Badge|
 
@@ -86,35 +94,14 @@ If you have questions or troubles running the scripts, join our slack channel |S
 .. |GitHub SampleRNN| image:: https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=View%20On%20Github&color=blue
    :target: https://github.com/ktonal/mimikit-notebooks/blob/main/demos/plain/sample-rnn.ipynb
 
-.. |Sample SampleRNN| raw:: html
-
-   <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/srnn.mp3?raw=true" >
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-
 .. |Colab FreqNet| image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/ktonal/mimikit-notebooks/blob/main/demos/colab/freqnet.ipynb
 
 .. |GitHub FreqNet| image:: https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=View%20On%20Github&color=blue
    :target: https://github.com/ktonal/mimikit-notebooks/blob/main/demos/plain/freqnet.ipynb
 
-.. |Sample FreqNet| raw:: html
-
-   <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/freqnet.mp3?raw=true" >
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-
 .. |Colab S2S| image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/ktonal/mimikit-notebooks/blob/main/demos/colab/s2s.ipynb
 
 .. |GitHub S2S| image:: https://img.shields.io/static/v1.svg?logo=github&label=Repo&message=View%20On%20Github&color=blue
    :target: https://github.com/ktonal/mimikit-notebooks/blob/main/demos/plain/s2s.ipynb
-
-.. |Sample S2S| raw:: html
-
-   <audio controls="controls" style="height:24px;width:128px">
-      <source src="https://github.com/ktonal/mimikit-notebooks/blob/main/assets/s2s.mp3?raw=true" >
-      Your browser does not support the <code>audio</code> element.
-    </audio>
