@@ -23,7 +23,8 @@ drive.mount('/gdrive')
 ### Install `mimikit`\
 """)
     pip = nbf.v4.new_code_cell(f"""\
-!pip install mimikit=={mmk.__version__}\
+%pip install torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+%pip install mimikit[colab]=={mmk.__version__}\
 """)
     return [title, mount_drive, install, pip]
 
@@ -61,10 +62,7 @@ pip install mimikit=={mmk.__version__}
 
 if __name__ == '__main__':
     import os
-    from mimikit.models.freqnet import demo as fnet_demo
-    from mimikit.models.sample_rnn import demo as srnn_demo
-    from mimikit.models.wavenet import demo as wn_demo
-    from mimikit.models.s2s_lstm import demo as s2s_demo
+    import mimikit.demos as demos
 
     roots = [
         './demos/plain',
@@ -72,10 +70,7 @@ if __name__ == '__main__':
     ]
 
     demos = {
-        "freqnet.ipynb": fnet_demo,
-        "sample-rnn.ipynb": srnn_demo,
-        "seq2seq-lstm.ipynb": s2s_demo,
-        "wavenet.ipynb": wn_demo,
+        "freqnet.ipynb": demos.freqnet.demo,
     }
 
     for root in roots:
