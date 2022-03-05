@@ -43,7 +43,7 @@ def demo_to_notebook(demo, out_file, colab=False):
         warning = nbf.v4.new_markdown_cell(f"""\
 this notebook assumes you already installed mimikit on your system through the command-line
 ```bash
-pip install mimikit=={mmk.__version__}
+pip install mimikit[torch]=={mmk.__version__}
 ```
 """)
         cells += [warning]
@@ -71,6 +71,9 @@ if __name__ == '__main__':
 
     demos = {
         "freqnet.ipynb": demos.freqnet.demo,
+        "sample-rnn.ipynb": demos.srnn.demo,
+        "s2s.ipynb": demos.s2s.demo,
+        "wavenet.ipynb": demos.wn.demo,
     }
 
     for root in roots:
