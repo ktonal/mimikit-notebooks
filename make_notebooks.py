@@ -23,7 +23,9 @@ drive.mount('/gdrive')
 ### Install `mimikit`\
 """)
     pip = nbf.v4.new_code_cell(f"""\
-%pip install torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+%pip install torchaudio==0.11.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+%pip install torchmetrics==0.5.1
+%pip uninstall torchtext -y
 %pip install mimikit[colab]=={mmk.__version__}\
 """)
     return [title, mount_drive, install, pip]
@@ -74,6 +76,7 @@ if __name__ == '__main__':
         "sample-rnn.ipynb": demos.srnn.demo,
         "s2s.ipynb": demos.s2s.demo,
         "wavenet.ipynb": demos.wn.demo,
+        "generate.ipynb": demos.generate_from_checkpoint.demo
     }
 
     for root in roots:
