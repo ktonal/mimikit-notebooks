@@ -23,12 +23,14 @@ drive.mount('/gdrive')
 ### Install `mimikit`\
 """)
     pip = nbf.v4.new_code_cell(f"""\
-%pip install torchaudio==0.11.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
-%pip install torchmetrics==0.5.1
 %pip uninstall torchtext -y
 %pip install mimikit[colab]=={mmk.__version__}\
 """)
-    return [title, mount_drive, install, pip]
+    imports = nbf.v4.new_code_cell(f"""\
+# colab crashes if following import is done within mimikit
+import pytorch_lightning as pl\
+""")
+    return [title, mount_drive, install, pip, imports]
 
 
 def demo_to_notebook(demo, out_file, colab=False):
