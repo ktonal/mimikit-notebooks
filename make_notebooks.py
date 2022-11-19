@@ -78,7 +78,8 @@ if __name__ == '__main__':
         "sample-rnn.ipynb": demos.srnn.demo,
         "s2s.ipynb": demos.s2s.demo,
         "wavenet.ipynb": demos.wn.demo,
-        "generate.ipynb": demos.generate_from_checkpoint.demo
+        "generate.ipynb": demos.generate_from_checkpoint.demo,
+        "ensemble.ipynb": demos.ensemble.demo
     }
 
     for root in roots:
