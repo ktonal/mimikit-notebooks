@@ -7,7 +7,8 @@ git checkout main
 python make_notebooks.py
 
 # grab mimikit version
-export TAG="v$(pip list | grep mimikit |  awk '{print $2}')"
+#export TAG="v$(pip list | grep mimikit |  awk '{print $2}')"
+export TAG="v0.4.1"
 
 # delete tag if it already exists
 if [ "$(git tag -l $TAG)" ]; then
@@ -22,5 +23,5 @@ git commit -m $TAG
 
 git tag -a $TAG -m $TAG
 
-#git push
+git push
 
