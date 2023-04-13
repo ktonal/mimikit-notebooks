@@ -36,8 +36,8 @@ import pytorch_lightning as pl\
 def demo_to_notebook(demo, out_file, colab=False):
     code = getsource(demo)
     code = code.strip("def demo():\n")
-    code = dedent(code)
-    parts = re.split(r"(\"\"\".*\"\"\")", code)
+    is_separator = re.compile(r"(\"\"\"[^\n]*\"\"\"[\n]*)")
+    parts = re.split(is_separator, code)
     nb = nbf.v4.new_notebook()
     cells = []
     if colab:
@@ -52,10 +52,13 @@ pip install mimikit[torch]=={mmk.__version__}
 """)
         cells += [warning]
     for part in parts:
-        if '"""' in part:
+        if not part:
+            continue
+        part = dedent(part).strip()
+        if part.startswith('"""'):
             cells += [nbf.v4.new_markdown_cell(part.strip('"""'))]
         else:
-            part = dedent(part.strip('\n\n').strip("\n"))
+            part = part.strip('\n\n').strip("\n")
             if part:
                 cells += [nbf.v4.new_code_cell(part)]
     signature = nbf.v4.new_markdown_cell("""<img src="https://ktonal.com/k-circle-bw.png" alt="logo" width="75"/>""")
@@ -76,10 +79,10 @@ if __name__ == '__main__':
     demos = {
         "freqnet.ipynb": demos.freqnet.demo,
         "sample-rnn.ipynb": demos.srnn.demo,
-        "s2s.ipynb": demos.s2s.demo,
-        "wavenet.ipynb": demos.wn.demo,
+        "seq2seq.ipynb": demos.seq2seq.demo,
+        "ensemble-generator.ipynb": demos.ensemble_generator.demo,
         "generate.ipynb": demos.generate_from_checkpoint.demo,
-        "ensemble.ipynb": demos.ensemble.demo
+        "clusterizer.ipynb": demos.clusterizer_app.demo
     }
 
     for root in roots:

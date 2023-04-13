@@ -22,5 +22,5 @@ git commit -m $TAG
 
 git tag -a $TAG -m $TAG
 
-git push
+#git push
 
