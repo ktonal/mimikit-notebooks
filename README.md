@@ -3,6 +3,13 @@
 
 # mimikit-notebooks
 
-Jupyter/Colab Notebooks for running [mimikit](https://github.com/ktonal/mimikit) demos.
+The `mimikit-notebooks` are a small collections of jupyter notebooks containing scripts to train audio generating neural networks.
 
-Head to [the User Guides](https://mimikit-notebooks.readthedocs.io/en/latest) for learning how to use them.
+Try them out on google colab: 
+
+   https://colab.research.google.com/github/ktonal/mimikit-notebooks/blob/main
+
+
+You'll find examples of what those notebooks output when run on different single audio files at
+
+   https://ktonal.github.io/mimikit-demo-outputs

@@ -24,6 +24,7 @@ drive.mount('/gdrive')
 """)
     pip = nbf.v4.new_code_cell(f"""\
 %pip uninstall torchtext -y
+%pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 %pip install mimikit[colab]=={mmk.__version__}\
 """)
     imports = nbf.v4.new_code_cell(f"""\
@@ -89,5 +90,7 @@ if __name__ == '__main__':
         if not os.path.exists(root):
             os.makedirs(root, exist_ok=True)
         for name, demo in demos.items():
+            if "colab" in root and "clusterizer" in name:
+                continue
             demo_to_notebook(demo, os.path.join(root, name), colab='colab' in root)
 
